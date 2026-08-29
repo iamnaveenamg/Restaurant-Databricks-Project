@@ -70,6 +70,9 @@ def generate_order():
         "created_at": order_date.isoformat() + "Z"
     }
 
+# print(generate_order())
+
+# Here we send events created into eventHub Orders
 def stream_to_eventhub(interval_seconds=3, max_orders=None):
     producer = EventHubProducerClient.from_connection_string(
         conn_str=EVENTHUB_CONNECTION_STRING,
@@ -105,3 +108,4 @@ def stream_to_eventhub(interval_seconds=3, max_orders=None):
 
 if __name__ == "__main__":
     stream_to_eventhub(interval_seconds=3)
+

@@ -1,3 +1,4 @@
 azure-eventhub==5.15.1
 pandas==2.3.3
 faker==39.0.0
+dotenv==1.2.3
