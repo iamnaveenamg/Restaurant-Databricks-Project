@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+Dashboard_Agent/Restaurant Sales and Customer Insights.geniespace.json
